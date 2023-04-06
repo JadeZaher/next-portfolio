@@ -17,7 +17,7 @@ const Experience: NextPage = () => {
       <main className=" flex flex-col items-center justify-center  ">
         <div className=" relative flex w-screen flex-col items-center justify-center tablet:flex-row">
           <ProjectsSlider />
-          <div className="max-w-[240px] tablet:ml-[10vw] tablet:max-w-[400px] ">
+          <div className="max-w-[82vw]  tablet:ml-[10vw] tablet:max-w-[400px] ">
             <CTAButton
               text="Learn more
 about my work"

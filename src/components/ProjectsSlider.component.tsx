@@ -21,11 +21,11 @@ const ProjectsSlider = () => {
       return <img src={getVideoThumb(videoId)} />;
     });
   return (
-    <div className=" max-w-[82vw]  tablet:max-w-[40vw]">
+    <div className=" w-[100vw] rounded-md border-[2px] border-green bg-offWhite tablet:max-w-[40vw]">
       <Carousel
-        renderItem={customRenderItem}
-        renderThumbs={customRenderThumb}
         showStatus={false}
+        renderThumbs={customRenderThumb}
+        renderItem={customRenderItem}
       >
         <YoutubeSlide
           key="youtube-1"
@@ -67,24 +67,30 @@ const YoutubeSlide = ({
   skills: string[];
   description: string;
 }) => (
-  <div>
-    <div className="flex items-center justify-center tablet:justify-start">
-      <h1 className="text-rH2 font-black">{title}</h1>
-      <h2 className="text-rH2 font-semibold text-pink">
-        &nbsp; - {job} - {company}
-      </h2>
+  <div className="mb-[10%]">
+    <div className="m-[5%]">
+      <div className="flex flex-col items-center justify-center tablet:items-start">
+        <h1 className="flex text-rH2 font-black">{title}</h1>
+        <div className="my-2 flex">
+          {skills.map((skill) => (
+            <p className="mx-1 rounded-md bg-green p-1 px-2 text-rP font-semibold text-offWhite ">
+              {skill}
+            </p>
+          ))}
+        </div>
+      </div>
+      <div className="  my-2 flex items-center justify-center tablet:justify-start">
+        <h2 className="text-rP font-semibold text-pink">
+          {job} - {company}
+        </h2>
+      </div>
+      <p className=" my-2  text-rP tablet:text-left ">{description}</p>
     </div>
-    <div className="my-2 flex items-center justify-center tablet:justify-start">
-      {skills.map((skill) => (
-        <p className="mx-1 rounded-md bg-green p-1 px-2 text-rP font-semibold text-offWhite ">
-          {skill}
-        </p>
-      ))}
-    </div>
-    <p className="my-2 text-rP tablet:text-left ">{description}</p>
+
     <ReactPlayer
       width="100%"
-      className="min-h-[50vh] w-full rounded-lg bg-black"
+      height="45vh"
+      className=" h-[30vh] w-screen tablet:w-full"
       url={url}
       playing={isSelected}
     />

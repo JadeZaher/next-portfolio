@@ -5,7 +5,6 @@ import WindowSize from "~/Hook/HandleWindowResize.hook";
 
 const ContactForm = () => {
   const [open, setOpen] = useState(false);
-  const windowSize = WindowSize();
 
   return (
     <div
@@ -17,14 +16,16 @@ const ContactForm = () => {
       } 
        right-[10%]  flex max-h-[90vh] max-w-[80vw]  flex-col items-center justify-center rounded-[45px] bg-red duration-300 ease-linear `}
     >
-      <Image
-        alt="contact"
-        src={ContactIcon}
-        className="m-5 mb-2  w-[40px] mobile:m-2 tablet:w-[80px]"
+      <div
+        className="p-5 pb-2 "
         onClick={() => {
           setOpen(!open);
         }}
-      />
+      >
+        <p className="pointer-events-none text-rP font-medium text-offWhite">
+          Contact
+        </p>
+      </div>
       <form
         className={`${
           open

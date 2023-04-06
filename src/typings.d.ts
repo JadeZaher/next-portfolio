@@ -4,9 +4,9 @@ type Base = {
   _rev: string;
   _type: string;
   _updatedAt: string;
-}
+};
 
-interface Posts extends Base{
+interface Posts extends Base {
   author: Author;
   body: Block[];
   categories: Category[];
@@ -17,47 +17,48 @@ interface Posts extends Base{
   link: string;
 }
 
-interface Image{
-  _type:'image';
-  asset:Refrence;
+interface Image {
+  _type: "image";
+  asset: Refrence;
 }
 
-interface Refrence{
-  _ref:string;
-  _type:'reference';
+interface Refrence {
+  _ref: string;
+  _type: "reference";
 }
 
-interface Slug{
-  _type:"slug"
-  current:string;
+interface Slug {
+  _type: "slug";
+  current: string;
 }
 
-interface Block{
-  _key:string;
-  _type:"block";
-  children:Span[];
+interface Block {
+  _key: string;
+  _type: "block";
+  children: Span[];
   markDefs: any[];
-  style:"normal"|"h1"|"h3"|"h4"|"blockqoute";
+  style: "normal" | "h1" | "h3" | "h4" | "blockqoute";
 }
 
-interface Span{
-  _key:string;
-  _type:"span";
-  marks:string[];
-  text:string[];
+interface Span {
+  _key: string;
+  _type: "span";
+  marks: string[];
+  text: string[];
 }
 
-interface Category extends Base{
+interface Category extends Base {
   description: string;
   title: string;
 }
 
-interface MainImage{
-  _type:'image';
-  asset:Refrence;
+interface MainImage {
+  _type: "image";
+  asset: Refrence;
 }
 
-interface Title{
+interface Title {
   _type: "string";
-  current:string;
+  title: "string";
+  current: string;
 }

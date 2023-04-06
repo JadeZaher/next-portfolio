@@ -28,15 +28,15 @@ const Home: NextPage = () => {
             <h1 className="    mb-[45px] mt-4 max-w-fit rounded-[45px] bg-offBlack p-6 px-10 text-center text-rH1 font-black  text-offWhite mobile:mt-0 mobile:text-left">
               I'm Ahmed Zaher
             </h1>
-            <div className=" ml-[5%] flex flex-col items-center justify-center text-center tablet:items-start tablet:text-left ">
+            <div className=" flex flex-col items-center justify-center text-center tablet:ml-[-5%] tablet:items-start tablet:text-left ">
               <h2 className="mb-[25px] text-rH2 font-bold text-pink">
                 A Full Stack Developer <br /> Based In the Pacific Northwest.
               </h2>
-              <p className=" mb-[25px] max-w-[80vw] text-rP font-medium tablet:max-w-[28vw]">
+              <p className=" mb-[25px] max-w-[80vw] text-rP font-medium  tablet:max-w-[28vw]">
                 With A deep passion for UX, and a drive for building
                 applications that help drive the changes I believe we need in
                 the world. <br /> <br />
-                Helping people be wealthier, happier, smarter, and healthier.
+                Helping people become happier, smarter, and healthier.
                 <br /> <br />
                 Making society more equitable, just, and kind. <br />
               </p>

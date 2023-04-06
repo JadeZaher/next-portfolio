@@ -10,11 +10,11 @@ export default {
     extend: {
       dropShadow: {
         thickDesktop: "-8px 8px 0 #000",
-        thickMobile: "-3px 3px 0 #000",
+        thickMobile: "-1px 1px 0 #000",
       },
       colors: {
         offBlack: "#1A1818",
-        offWhite: "#FBF9F4",
+        offWhite: "#F9F9F9",
         pink: "#D452C6",
         purple: "#6548E1",
         yellow: "#F9DA49",
