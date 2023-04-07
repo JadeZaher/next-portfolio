@@ -5,14 +5,19 @@ import Image from "next/image";
 import urlFor from "lib/urlFor";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "~/components/RichTextComponents.component";
-
+import { motion } from "framer-motion";
 const Post = ({
   post,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
-  console.log(post);
   return (
     <>
-      <div className=" relative mx-[5vw] grid w-[90vw] justify-center tablet:mx-[10vw] tablet:w-[50vw]   tablet:pt-2">
+      <motion.div
+        initial={{ opacity: 0, x: 15 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: 15 }}
+        transition={{ delay: 0.25 }}
+        className=" relative mx-[5vw] grid w-[90vw] justify-center tablet:mx-[10vw] tablet:w-[50vw]   tablet:pt-2"
+      >
         {/* header */}
         <section className="grid w-full items-center">
           <div
@@ -45,7 +50,7 @@ const Post = ({
         <section className=" mt-4 rounded-lg bg-offWhite bg-opacity-40 p-4">
           <PortableText value={post.body} components={RichTextComponents} />
         </section>
-      </div>
+      </motion.div>
     </>
   );
 };

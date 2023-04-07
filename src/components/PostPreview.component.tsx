@@ -23,11 +23,11 @@ const PostPreview = ({
             backgroundColor: "#FBF9F4",
           }}
           className={` w-[40vw] rounded-l-[15px] bg-cover bg-clip-border bg-center  bg-no-repeat shadow-md tablet:w-[20vw] `}
-        />
+        ></div>
         <div className=" ml-[-15px] w-[40vw]  rounded-[15px] border-2  border-green bg-white p-2 shadow-md tablet:w-[20vw] tablet:p-4">
           <h2 className="text-rH2 font-semibold">{title}</h2>
           <p className="mb-2 text-[12px] opacity-60 ">{date}</p>
-          <p className=" tablet:line-clamp-[8] line-clamp-[7] text-rP">
+          <p className=" line-clamp-[7] text-rP tablet:line-clamp-[8]">
             {previewText}
           </p>
         </div>

@@ -3,6 +3,7 @@ import Head from "next/head";
 import LogoMe from "public/LogoMe.png";
 import Image from "next/image";
 import CTAButton from "~/components/CTAButton.component";
+import { motion } from "framer-motion";
 
 const Home: NextPage = () => {
   return (
@@ -15,17 +16,23 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" flex flex-col items-center justify-center  ">
-        <div className=" relative flex w-screen flex-col items-center justify-center tablet:flex-row">
+      <main className=" flex flex-col items-center justify-center overflow-hidden  ">
+        <motion.div
+          initial={{ opacity: 0, x: 15 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 15 }}
+          transition={{ delay: 0.25 }}
+          className=" relative flex w-screen flex-col items-center justify-center tablet:flex-row"
+        >
           <Image
             src={LogoMe}
             alt="Ahmed Zaher Profile"
             height={620}
             width={620}
-            className=" mr-[10%] max-w-[50%] rounded-full  drop-shadow-thickMobile tablet:max-w-[100%]"
+            className=" mr-[10%] max-w-[50%] rounded-full  drop-shadow-2xl tablet:max-w-[100%]"
           />
           <div className="mx-2 mt-4 flex max-w-[80vw] flex-col  items-start justify-center mobile:items-center tablet:mt-0 tablet:max-w-full ">
-            <h1 className="    mb-[45px] mt-4 max-w-fit rounded-[45px] bg-offBlack p-6 px-10 text-center text-rH1 font-black  text-offWhite mobile:mt-0 mobile:text-left">
+            <h1 className="    mb-[45px] mt-4 max-w-fit rounded-[45px] border-[3px] border-offWhite bg-offBlack p-6 px-10 text-center text-rH1 font-black text-offWhite  drop-shadow-2xl mobile:mt-0 mobile:text-left">
               I'm Ahmed Zaher
             </h1>
             <div className=" flex flex-col items-center justify-center text-center tablet:ml-[-5%] tablet:items-start tablet:text-left ">
@@ -43,7 +50,7 @@ const Home: NextPage = () => {
               <CTAButton text="Experience" link="/experience" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </main>
     </>
   );

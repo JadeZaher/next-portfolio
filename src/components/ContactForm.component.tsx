@@ -12,9 +12,9 @@ const ContactForm = () => {
       ${
         open
           ? "bottom-[5vh] min-w-[80vw] rounded-[45px]  rounded-b-[45px] tablet:min-w-[40vw] "
-          : ` bottom-0 rounded-b-[0px]  rounded-t-[45px] tablet:w-[200px] `
+          : ` bottom-0 rounded-b-[0px]  rounded-t-[45px] border-b-0 tablet:w-[200px] `
       } 
-       right-[10%]  flex max-h-[90vh] max-w-[80vw]  flex-col items-center justify-center rounded-[45px] bg-red duration-300 ease-linear `}
+       right-[10%]  flex max-h-[90vh] max-w-[80vw]  flex-col items-center justify-center rounded-[45px] border-[3px] border-white bg-red drop-shadow-2xl duration-300 ease-linear `}
     >
       <div
         className="p-5 pb-2 "
@@ -37,7 +37,7 @@ const ContactForm = () => {
         action="https://public.herotofu.com/v1/9eda1ca0-d195-11ed-97cd-e58a101b2c9f"
         method="post"
       >
-        <div className="mb-4 flex flex-col items-start px-5">
+        <div className="mb-4 flex flex-col items-center px-5">
           <input
             className="m-2 w-full rounded-md border-2 border-offWhite bg-red p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
             placeholder="Your Name"
