@@ -150,8 +150,11 @@ const YoutubeSlide = ({
       <div className="flex flex-col items-center justify-center tablet:items-start">
         <h1 className="flex text-rH2 font-black">{title}</h1>
         <div className="my-2 flex">
-          {skills.map((skill) => (
-            <p className="mx-1 rounded-md bg-green p-1 px-2 text-[12px] font-semibold  text-offWhite tablet:text-rP ">
+          {skills.map((skill, i) => (
+            <p
+              key={i}
+              className="mx-1 rounded-md bg-green p-1 px-2 text-[12px] font-semibold  text-offWhite tablet:text-rP "
+            >
               {skill}
             </p>
           ))}

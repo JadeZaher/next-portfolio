@@ -6,9 +6,8 @@ import urlFor from "lib/urlFor";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "~/components/RichTextComponents.component";
 import { motion } from "framer-motion";
-const Post = ({
-  post,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+
+const Post = ({ post }: { post: Posts }) => {
   return (
     <>
       <motion.div
@@ -55,9 +54,7 @@ const Post = ({
   );
 };
 
-export const getServerSideProps: GetServerSideProps<{ post: Posts }> = async (
-  pageContext
-) => {
+export const getServerSideProps: GetServerSideProps = async (pageContext) => {
   const pageSlug = pageContext.query.post;
 
   const query = `
@@ -67,7 +64,7 @@ export const getServerSideProps: GetServerSideProps<{ post: Posts }> = async (
     categories[]->,
   } | order(_createdAt desc)`;
 
-  const post = await client.fetch(query, { pageSlug });
+  const post = (await client.fetch(query, { pageSlug })) as Array<Posts>;
 
   if (!post) {
     return {

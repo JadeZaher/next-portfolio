@@ -9,7 +9,7 @@ export const RichTextComponents = {
         <div className="relative m-10 mx-auto h-96 w-full">
           <Image
             className="object-contain"
-            src={urlFor(value).url()}
+            src={urlFor(value as Image).url()}
             alt="Blog Post Image"
             fill
           />
@@ -30,16 +30,16 @@ export const RichTextComponents = {
       <h1 className="py-10 text-5xl font-bold">{children}</h1>
     ),
     h2: ({ children }: any) => (
-      <h2 className="py-10 text-4xl font-bold">{children}</h2>
+      <h2 className="py-10 text-4xl font-bold">{children as string}</h2>
     ),
     h3: ({ children }: any) => (
-      <h3 className="py-10 text-3xl font-bold">{children}</h3>
+      <h3 className="py-10 text-3xl font-bold">{children as string}</h3>
     ),
     h4: ({ children }: any) => (
-      <h4 className="py-10 text-2xl font-bold">{children}</h4>
+      <h4 className="py-10 text-2xl font-bold">{children as string}</h4>
     ),
     normal: ({ children }: any) => (
-      <p className="py-10 text-rP font-normal">{children}</p>
+      <p className="py-10 text-rP font-normal">{children as string}</p>
     ),
 
     blockqoute: ({ children }: any) => (
@@ -59,7 +59,7 @@ export const RichTextComponents = {
           rel={rel}
           className="underline decoration-offBlack hover:decoration-green"
         >
-          {children}
+          {children as string}
         </Link>
       );
     },

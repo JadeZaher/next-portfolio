@@ -11,7 +11,7 @@ import Download from "public/Download.png";
 
 const Blog: NextPage<Props> = ({ posts }) => {
   function downloadFileAtUrl(url: string) {
-    const fileName = url.split("/").pop();
+    url.split("/").pop();
     const aTag = document.createElement("a");
     aTag.href = url;
     aTag.setAttribute("download", "");
@@ -68,7 +68,7 @@ const Blog: NextPage<Props> = ({ posts }) => {
                 onClick={() => {
                   downloadFileAtUrl("/Resume.pdf");
                 }}
-                className="  flex w-fit items-center rounded-md border-x-[2px] border-y-[1px]  border-yellow  bg-offWhite p-4 text-rH2 font-medium text-purple drop-shadow-xl"
+                className="  flex w-fit cursor-pointer items-center rounded-md   border-x-[2px] border-y-[1px]  border-yellow  bg-offWhite p-4 text-rH2 font-medium text-purple drop-shadow-xl"
               >
                 Download Resume
                 <Image
@@ -99,7 +99,7 @@ interface Props {
 }
 
 Blog.getInitialProps = async ({}) => {
-  const posts = await client.fetch(query);
+  const posts: Posts[] = await client.fetch(query);
 
   return { posts };
 };

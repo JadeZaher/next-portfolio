@@ -19,12 +19,18 @@ interface Posts extends Base {
 
 interface Image {
   _type: "image";
-  asset: Refrence;
+  asset: Reference;
 }
 
-interface Refrence {
+interface Reference {
   _ref: string;
   _type: "reference";
+}
+
+interface Author {
+  title: Title;
+  author: string;
+  media: MainImage;
 }
 
 interface Slug {
@@ -54,7 +60,7 @@ interface Category extends Base {
 
 interface MainImage {
   _type: "image";
-  asset: Refrence;
+  asset: Reference;
 }
 
 interface Title {

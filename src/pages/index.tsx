@@ -33,7 +33,7 @@ const Home: NextPage = () => {
           />
           <div className="mx-2 mt-4 flex max-w-[80vw] flex-col  items-start justify-center mobile:items-center tablet:mt-0 tablet:max-w-full ">
             <h1 className="    mb-[45px] mt-4 max-w-fit rounded-[45px] border-[3px] border-offWhite bg-offBlack p-6 px-10 text-center text-rH1 font-black text-offWhite  drop-shadow-2xl mobile:mt-0 mobile:text-left">
-              I'm Ahmed Zaher
+              I&apos;m Ahmed Zaher
             </h1>
             <div className=" flex flex-col items-center justify-center text-center tablet:ml-[-5%] tablet:items-start tablet:text-left ">
               <h2 className="mb-[25px] text-rH2 font-bold text-pink">

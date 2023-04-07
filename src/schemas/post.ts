@@ -64,11 +64,11 @@ export default defineType({
   preview: {
     select: {
       title: "title",
-      author: "author.name",
       media: "mainImage",
+      author: "author.name",
     },
     prepare(selection) {
-      const { author } = selection;
+      const { author } = selection as Author;
       return { ...selection, subtitle: author && `by ${author}` };
     },
   },
