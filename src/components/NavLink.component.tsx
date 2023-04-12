@@ -10,8 +10,8 @@ const NavLink = ({ name, link }: { name: string; link: string }) => {
     <Link
       href={link}
       className={`${
-        currentRoute === link ? "text-purple drop-shadow-2xl" : "text-offBlack"
-      }`}
+        currentRoute === link ? "text-green drop-shadow-2xl" : "text-offWhite"
+      } duration-200`}
     >
       {name}
     </Link>

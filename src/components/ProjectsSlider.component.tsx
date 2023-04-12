@@ -26,7 +26,7 @@ const ProjectsSlider = () => {
   //     return <img src={getVideoThumb(videoId)} />;
   //   });
   return (
-    <div className=" w-[90vw] rounded-md border-[2px] border-green bg-offWhite tablet:max-w-[40vw]">
+    <div className=" w-[90vw] rounded-md border-[2px] border-green bg-offBlack tablet:max-w-[40vw]">
       <Carousel
         showStatus={false}
         showThumbs={false}
@@ -37,7 +37,7 @@ const ProjectsSlider = () => {
               type="button"
               onClick={onClickHandler}
               title={label}
-              className="absolute left-[3px] top-[calc(50%-20px)] z-10 w-[40px] cursor-pointer rounded-md border-[2px] border-green bg-offWhite p-3 opacity-75 drop-shadow-md hover:opacity-100 tablet:left-[2%]"
+              className="absolute left-[3px] top-[calc(50%)] z-20 grid w-[35px] cursor-pointer place-items-center rounded-md border-[2px] border-green bg-offBlack p-3 drop-shadow-md hover:scale-105 tablet:left-[2%] tablet:w-[50px]"
             >
               <Image
                 alt="Go Left"
@@ -55,14 +55,13 @@ const ProjectsSlider = () => {
               type="button"
               onClick={onClickHandler}
               title={label}
-              className="hover:opacity-10n absolute right-[3px] top-[calc(50%-20px)] z-20 w-[40px] cursor-pointer rounded-md border-[2px] border-green bg-offWhite p-3 opacity-75 drop-shadow-md hover:opacity-100 tablet:right-[2%]"
+              className=" absolute right-[3px] top-[calc(50%)] z-20 grid w-[35px] cursor-pointer place-items-center rounded-md border-[2px] border-green bg-offBlack p-3 drop-shadow-md hover:scale-105 tablet:right-[2%]  tablet:w-[50px]"
             >
               <Image
                 alt="Go Left"
                 src={SliderRight.src}
                 width={30}
                 height={30}
-                className="max-w-full"
               />
             </button>
           )
@@ -148,12 +147,12 @@ const YoutubeSlide = ({
   <div>
     <div className="m-[5%]">
       <div className="flex flex-col items-center justify-center tablet:items-start">
-        <h1 className="flex text-rH2 font-black">{title}</h1>
+        <h1 className="flex text-rH2 font-black text-white">{title}</h1>
         <div className="my-2 flex">
           {skills.map((skill, i) => (
             <p
               key={i}
-              className="mx-1 rounded-md bg-green p-1 px-2 text-[12px] font-semibold  text-offWhite tablet:text-rP "
+              className="mx-1 rounded-md bg-green p-1 px-2 text-[12px] font-semibold  text-white tablet:text-rP "
             >
               {skill}
             </p>
@@ -166,7 +165,7 @@ const YoutubeSlide = ({
           @{company}
         </h2>
       </div>
-      <p className=" my-2  text-[12px] tablet:text-left tablet:text-rP ">
+      <p className=" my-2 text-[12px] text-white tablet:text-left tablet:text-rP ">
         {description}
       </p>
     </div>

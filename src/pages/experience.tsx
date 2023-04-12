@@ -14,7 +14,7 @@ const Experience: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" flex flex-col items-center justify-center overflow-hidden ">
+      <main className=" mt-[-10%] grid place-items-center overflow-hidden tablet:mt-0 ">
         <motion.div
           initial={{ opacity: 0, x: 15 }}
           animate={{ opacity: 1, x: 0 }}
@@ -24,11 +24,7 @@ const Experience: NextPage = () => {
         >
           <ProjectsSlider />
           <div className="max-w-[82vw]  tablet:ml-[10vw] tablet:max-w-[400px] ">
-            <CTAButton
-              text="Learn more
-about my work"
-              link="/blog"
-            />
+            <CTAButton text="Learn more on my blog" link="/blog" />
           </div>
         </motion.div>
       </main>

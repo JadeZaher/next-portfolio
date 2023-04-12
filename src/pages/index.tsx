@@ -27,28 +27,29 @@ const Home: NextPage = () => {
           <Image
             src={LogoMe}
             alt="Ahmed Zaher Profile"
-            height={620}
-            width={620}
-            className=" mr-[10%] max-w-[50%] rounded-full  drop-shadow-2xl tablet:max-w-[100%]"
+            height={520}
+            width={520}
+            className=" mr-[10%] max-w-[50%] rounded-full drop-shadow-2xl  tablet:max-w-[30%] "
           />
-          <div className="mx-2 mt-4 flex max-w-[80vw] flex-col  items-start justify-center mobile:items-center tablet:mt-0 tablet:max-w-full ">
-            <h1 className="    mb-[45px] mt-4 max-w-fit rounded-[45px] border-[3px] border-offWhite bg-offBlack p-6 px-10 text-center text-rH1 font-black text-offWhite  drop-shadow-2xl mobile:mt-0 mobile:text-left">
+          <div className="mt-4 flex max-w-[100%] flex-col items-center justify-center text-center  tablet:mx-2 tablet:mt-0  tablet:max-w-[50%] tablet:items-start tablet:text-left ">
+            <h1 className="    mb-[35px] mt-4 max-w-fit text-rH1 font-black text-offWhite  mobile:mt-0 mobile:text-left">
               I&apos;m Ahmed Zaher
             </h1>
-            <div className=" flex flex-col items-center justify-center text-center tablet:ml-[-5%] tablet:items-start tablet:text-left ">
-              <h2 className="mb-[25px] text-rH2 font-bold text-pink">
-                A Full Stack Developer <br /> Based In the Pacific Northwest.
-              </h2>
-              <p className=" mb-[25px] max-w-[80vw] text-rP font-medium  tablet:max-w-[28vw]">
-                With A deep passion for UX, and a drive for building
-                applications that help drive the changes I believe we need in
-                the world. <br /> <br />
-                Helping people become happier, smarter, and healthier.
-                <br /> <br />
-                Making society more equitable, just, and kind. <br />
-              </p>
-              <CTAButton text="Experience" link="/experience" />
-            </div>
+            <h2 className="mb-[25px] text-rH2 font-semibold italic text-green">
+              A Full Stack Developer <br /> Based In the Pacific Northwest.{" "}
+              <br />
+              <span className="text-rP font-thin text-offWhite opacity-30">
+                Currently Located in Boise ID
+              </span>
+            </h2>
+            <p className=" mb-[25px] max-w-[80vw] text-rP font-medium text-offWhite tablet:max-w-[40vw] ">
+              With A deep passion for UX, and a drive for building applications
+              that help drive the changes I believe we need in the world. <br />{" "}
+              <br />
+              Helping people become happier, smarter, and healthier.
+              <br /> <br />
+              Making society more equitable, just, and kind. <br />
+            </p>
           </div>
         </motion.div>
       </main>

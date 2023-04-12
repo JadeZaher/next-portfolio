@@ -14,15 +14,15 @@ const ContactForm = () => {
           ? "bottom-[5vh] min-w-[80vw] rounded-[45px]  rounded-b-[45px] tablet:min-w-[40vw] "
           : ` bottom-0 rounded-b-[0px]  rounded-t-[45px] border-b-0 tablet:w-[200px] `
       } 
-       right-[10%]  flex max-h-[90vh] max-w-[80vw]  flex-col items-center justify-center rounded-[45px] border-[3px] border-white bg-red drop-shadow-2xl duration-300 ease-linear `}
+       right-[10%]  flex max-h-[90vh] max-w-[80vw]  flex-col items-center justify-center rounded-[45px] border-[3px] border-green bg-offBlack drop-shadow-2xl duration-300 ease-linear `}
     >
       <div
-        className="p-5 pb-2 "
+        className="cursor-pointer p-5 pb-2 "
         onClick={() => {
           setOpen(!open);
         }}
       >
-        <p className="pointer-events-none text-rP font-medium text-offWhite">
+        <p className="pointer-events-none  text-rP font-medium  text-offWhite">
           Contact
         </p>
       </div>
@@ -39,7 +39,7 @@ const ContactForm = () => {
       >
         <div className="mb-4 flex flex-col items-center px-5">
           <input
-            className="m-2 w-full rounded-md border-2 border-offWhite bg-red p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
+            className="m-2 w-full rounded-md border-2 border-offWhite bg-offBlack p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
             placeholder="Your Name"
             name="Name"
             id="name"
@@ -47,7 +47,7 @@ const ContactForm = () => {
             required
           />
           <input
-            className="m-2 w-full rounded-md border-2 border-offWhite bg-red p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
+            className="m-2 w-full rounded-md border-2 border-offWhite bg-offBlack p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
             placeholder="Your@email.com"
             name="Email"
             id="email"
@@ -55,14 +55,14 @@ const ContactForm = () => {
             required
           />
           <input
-            className="m-2 w-full rounded-md border-2 border-offWhite bg-red p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
+            className="m-2 w-full rounded-md border-2 border-offWhite bg-offBlack p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
             placeholder="xxx-xxx-xxxx"
             name="Phone"
             id="phone"
             type="phone"
           />
           <select
-            className="m-2 w-full rounded-md border-2 border-offWhite bg-red p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
+            className="m-2 w-full rounded-md border-2 border-offWhite bg-offBlack p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
             name="Reason For Reaching Out"
             id="Reason For Reaching Out"
             required
@@ -77,7 +77,7 @@ const ContactForm = () => {
             <option>Other</option>
           </select>
           <textarea
-            className="m-2 min-h-[190px] w-full rounded-md border-2 border-offWhite bg-red p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
+            className="m-2 min-h-[190px] w-full rounded-md border-2 border-offWhite bg-offBlack p-2 py-2 font-semibold text-offWhite placeholder:text-offWhite placeholder:opacity-40"
             placeholder="Message"
             name="Message"
             id="Message"

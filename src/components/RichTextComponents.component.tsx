@@ -27,23 +27,31 @@ export const RichTextComponents = {
   },
   block: {
     h1: ({ children }: any) => (
-      <h1 className="py-10 text-5xl font-bold">{children}</h1>
+      <h1 className="py-10 text-5xl font-bold text-offWhite">{children}</h1>
     ),
     h2: ({ children }: any) => (
-      <h2 className="py-10 text-4xl font-bold">{children as string}</h2>
+      <h2 className="py-10 text-4xl font-bold text-offWhite">
+        {children as string}
+      </h2>
     ),
     h3: ({ children }: any) => (
-      <h3 className="py-10 text-3xl font-bold">{children as string}</h3>
+      <h3 className="py-10 text-3xl font-bold text-offWhite">
+        {children as string}
+      </h3>
     ),
     h4: ({ children }: any) => (
-      <h4 className="py-10 text-2xl font-bold">{children as string}</h4>
+      <h4 className="py-10 text-2xl font-bold text-offWhite">
+        {children as string}
+      </h4>
     ),
     normal: ({ children }: any) => (
-      <p className="py-10 text-rP font-normal">{children as string}</p>
+      <p className="py-10 text-rP font-normal text-offWhite">
+        {children as string}
+      </p>
     ),
 
     blockqoute: ({ children }: any) => (
-      <blockquote className="my-5 border-l-4 border-l-green py-5 pl-5">
+      <blockquote className="my-5 border-l-4 border-l-green py-5 pl-5 text-offWhite">
         {children}
       </blockquote>
     ),
@@ -57,7 +65,7 @@ export const RichTextComponents = {
         <Link
           href={value.href}
           rel={rel}
-          className="underline decoration-offBlack hover:decoration-green"
+          className="text-offWhite underline decoration-offWhite hover:text-green hover:decoration-green"
         >
           {children as string}
         </Link>

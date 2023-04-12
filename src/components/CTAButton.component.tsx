@@ -12,13 +12,8 @@ const CTAButton = ({ text, link }: ctaProps) => {
   return (
     <div>
       <Link href={link}>
-        <div className=" mt-2 flex w-fit items-center rounded-md border-x-[2px] border-y-[1px]  border-yellow bg-offWhite p-2 px-4 pb-2 text-rH2 font-medium text-purple drop-shadow-xl">
+        <div className=" mt-2 flex w-fit items-center rounded-md border-x-[2px] border-y-[1px]  border-green  p-2 px-4 pb-2 text-rH2 font-medium text-green drop-shadow-xl duration-100 hover:bg-green hover:text-offWhite">
           {text}
-          <Image
-            alt="Go To Experience"
-            src={BackIcon}
-            className=" ml-8 max-w-[40px] tablet:max-w-[80px]"
-          />
         </div>
       </Link>
     </div>

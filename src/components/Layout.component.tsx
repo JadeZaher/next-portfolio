@@ -25,18 +25,12 @@ const Layout = ({ children }: { children: any }) => {
   }, []);
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${Paper.src})`,
-          backgroundColor: "#FBF9F4",
-        }}
-        className={`fixed z-0  min-h-screen w-screen  bg-cover bg-fixed bg-clip-border bg-no-repeat tablet:bg-position_paper `}
-      />
+      <div className={`fixed z-0  min-h-screen w-screen  bg-offBlack`} />
 
       <NavBar />
       <ContactForm />
       <AnimatePresence initial={false}>
-        <div className=" max-w-screen grid min-h-screen items-center py-[120px] ">
+        <div className=" max-w-screen grid min-h-screen items-center py-[160px] ">
           {loading ? <h1>Loading...</h1> : <>{children}</>}
         </div>
       </AnimatePresence>
