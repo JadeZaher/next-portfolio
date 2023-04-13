@@ -36,7 +36,7 @@ const Blog: NextPage<Props> = ({ posts }) => {
             <h1 className=" fixed left-[10%] top-[100px] text-rH2  font-black text-offWhite">
               Blog
             </h1>
-            <div className=" fixed left-[10%] top-[150px]  mt-2 flex min-h-[40vh]  w-[80%] flex-row items-center justify-center overflow-x-scroll rounded-lg border-2 border-green bg-opacity-40 drop-shadow-2xl scrollbar-thin scrollbar-track-transparent scrollbar-thumb-green scrollbar-thumb-rounded-full tablet:top-[200px]   tablet:flex-col">
+            <div className=" fixed left-[10%] top-[150px] mt-2  flex min-h-[40vh] w-[80%]  animate-glow flex-row items-center justify-center overflow-x-scroll rounded-lg border-2 border-green bg-opacity-40 drop-shadow-glow scrollbar-thin scrollbar-track-transparent scrollbar-thumb-green scrollbar-thumb-rounded-full tablet:top-[200px]   tablet:flex-col">
               <motion.div
                 initial={{ opacity: 0, x: 15 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -68,7 +68,7 @@ const Blog: NextPage<Props> = ({ posts }) => {
                 onClick={() => {
                   downloadFileAtUrl("/Resume.pdf");
                 }}
-                className="  flex w-fit cursor-pointer items-center rounded-md border-x-[2px] border-y-[1px] border-green  p-4 text-rH2  font-medium  text-green drop-shadow-xl duration-100 hover:bg-green hover:text-offWhite"
+                className="  flex w-fit animate-glow cursor-pointer items-center rounded-md border-x-[2px] border-y-[1px] border-green  p-4 text-rH2  font-medium  text-green drop-shadow-glow duration-100 hover:bg-green hover:text-offWhite"
               >
                 Download My Resume
               </div>

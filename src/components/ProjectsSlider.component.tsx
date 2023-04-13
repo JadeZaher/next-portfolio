@@ -26,7 +26,7 @@ const ProjectsSlider = () => {
   //     return <img src={getVideoThumb(videoId)} />;
   //   });
   return (
-    <div className=" w-[90vw] rounded-md border-[2px] border-green bg-offBlack tablet:max-w-[40vw]">
+    <div className=" w-[90vw] rounded-md border-[2px] border-green bg-offBlack drop-shadow-glow tablet:max-w-[40vw]">
       <Carousel
         showStatus={false}
         showThumbs={false}
@@ -37,7 +37,7 @@ const ProjectsSlider = () => {
               type="button"
               onClick={onClickHandler}
               title={label}
-              className="absolute left-[3px] top-[calc(50%)] z-20 grid w-[35px] cursor-pointer place-items-center rounded-md border-[2px] border-green bg-offBlack p-3 drop-shadow-md hover:scale-105 tablet:left-[2%] tablet:w-[50px]"
+              className="absolute left-[3px]  top-[calc(50%)] z-20 grid w-[35px] animate-glow cursor-pointer place-items-center rounded-md border-[2px] border-green bg-offBlack p-3 drop-shadow-md hover:scale-105 tablet:left-[2%] tablet:w-[50px]"
             >
               <Image
                 alt="Go Left"

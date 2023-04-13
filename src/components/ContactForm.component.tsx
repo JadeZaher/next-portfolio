@@ -14,7 +14,7 @@ const ContactForm = () => {
           ? "bottom-[5vh] min-w-[80vw] rounded-[45px]  rounded-b-[45px] tablet:min-w-[40vw] "
           : ` bottom-0 rounded-b-[0px]  rounded-t-[45px] border-b-0 tablet:w-[200px] `
       } 
-       right-[10%]  flex max-h-[90vh] max-w-[80vw]  flex-col items-center justify-center rounded-[45px] border-[3px] border-green bg-offBlack drop-shadow-2xl duration-300 ease-linear `}
+       right-[10%]  flex max-h-[90vh] max-w-[80vw]  flex-col items-center justify-center rounded-[45px] border-[3px] border-green bg-offBlack  drop-shadow-glow duration-300 ease-linear `}
     >
       <div
         className="cursor-pointer p-5 pb-2 "

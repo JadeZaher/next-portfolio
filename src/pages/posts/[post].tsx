@@ -24,12 +24,12 @@ const Post = ({ post }: { post: Posts }) => {
               backgroundImage: `url(${urlFor(post.mainImage).url()})`,
               backgroundColor: "#FBF9F4",
             }}
-            className={`h-[20vh] w-[80vw] rounded-[15px] bg-cover bg-clip-border bg-center bg-no-repeat shadow-md  tablet:h-[40vh] tablet:w-[50vw]  `}
+            className={`h-[20vh] w-[80vw] rounded-[15px] bg-cover bg-clip-border bg-center bg-no-repeat shadow-md  drop-shadow-glow tablet:h-[40vh] tablet:w-[50vw]  `}
           />
-          <h1 className="my-2 text-rH1 font-semibold italic text-offWhite">
+          <h1 className="my-2 text-rH1 font-semibold italic text-offWhite drop-shadow-glow">
             {post.title}
           </h1>
-          <p className="m-1 text-[12px] text-offBlack opacity-70 tablet:text-[18px]">
+          <p className=" m-1 my-2 text-[12px] text-offWhite opacity-70 tablet:text-[18px]">
             {new Date(post._createdAt).toLocaleDateString("en-US", {
               day: "numeric",
               month: "long",
@@ -40,7 +40,7 @@ const Post = ({ post }: { post: Posts }) => {
             {post.categories.map((category, i: number) => (
               <p
                 key={i}
-                className=" m-1 w-fit min-w-[100px] rounded-md bg-offWhite p-2 text-center text-[12px] font-semibold  text-green tablet:text-[18px]"
+                className=" m-1  w-fit min-w-[100px] rounded-md bg-offWhite p-2 text-center text-[12px] font-semibold text-green  drop-shadow-glow tablet:text-[18px]"
               >
                 {category.title}
               </p>
@@ -48,7 +48,7 @@ const Post = ({ post }: { post: Posts }) => {
           </div>
         </section>
         {/* content */}
-        <section className=" mt-4 rounded-lg border-2 border-green p-4">
+        <section className=" mt-4 rounded-lg border-2 border-green p-4 drop-shadow-glow">
           <PortableText value={post.body} components={RichTextComponents} />
         </section>
       </motion.div>
