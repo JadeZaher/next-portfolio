@@ -10,16 +10,6 @@ import { motion } from "framer-motion";
 import Download from "public/Download.png";
 
 const Blog: NextPage<Props> = ({ posts }) => {
-  function downloadFileAtUrl(url: string) {
-    url.split("/").pop();
-    const aTag = document.createElement("a");
-    aTag.href = url;
-    aTag.setAttribute("download", "");
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
-  }
-
   return (
     <>
       <Head>
@@ -62,16 +52,6 @@ const Blog: NextPage<Props> = ({ posts }) => {
                   />
                 ))}
               </motion.div>
-            </div>
-            <div className="fixed bottom-[15%] left-[10%] max-w-[50vw]">
-              <div
-                onClick={() => {
-                  downloadFileAtUrl("/Resume.pdf");
-                }}
-                className="  flex w-fit animate-glow cursor-pointer items-center rounded-md border-x-[2px] border-y-[1px] border-green  p-4 text-rH2  font-medium  text-green drop-shadow-glow duration-100 hover:bg-green hover:text-offWhite"
-              >
-                Download My Resume
-              </div>
             </div>
           </div>
         </main>

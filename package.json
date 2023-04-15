@@ -12,6 +12,8 @@
   "dependencies": {
     "@portabletext/react": "^2.0.2",
     "@prisma/client": "^4.11.0",
+    "@react-three/drei": "^9.65.3",
+    "@react-three/fiber": "^8.12.1",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.0.0",
     "@tailwindcss/line-clamp": "^0.4.4",
@@ -41,6 +43,7 @@
     "@types/prettier": "^2.7.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@types/three": "^0.150.1",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "autoprefixer": "^10.4.14",
@@ -51,6 +54,7 @@
     "prettier-plugin-tailwindcss": "^0.2.6",
     "prisma": "^4.11.0",
     "tailwindcss": "^3.3.0",
+    "three": "^0.151.3",
     "typescript": "^5.0.2"
   },
   "ct3aMetadata": {

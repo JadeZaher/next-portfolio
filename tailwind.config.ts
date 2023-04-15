@@ -35,9 +35,17 @@ export default {
           "0 100%": { textShadow: "var(--drop-glow-1)" },
           "50%": { textShadow: "var(--drop-glow-2)" },
         },
+        scaleInOut: {
+          "0": { transform: "scale(1)", opacity: "1" },
+          "100%": { transform: "scale(.1)", opacity: "0.2" },
+        },
       },
       animation: {
         glow: "glow 1s ease-in-out alternate",
+        scale: "scaleInOut 1s ease-in-out alternate",
+        "spin-slow": "spin 3s linear infinite",
+        "ping-slow": "ping 3s cubic-bezier(0, 0, 0.2, 1) infinite",
+        "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
   },

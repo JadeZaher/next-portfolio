@@ -4,6 +4,7 @@ import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import dynamic from "next/dynamic";
+import Loading from "./Loading.component";
 
 import SliderRight from "../../public/Slider-Right.png";
 import SliderLeft from "../../public/Slider-Left.png";
@@ -37,14 +38,14 @@ const ProjectsSlider = () => {
               type="button"
               onClick={onClickHandler}
               title={label}
-              className="absolute left-[3px]  top-[calc(50%)] z-20 grid w-[35px] animate-glow cursor-pointer place-items-center rounded-md border-[2px] border-green bg-offBlack p-3 drop-shadow-md hover:scale-105 tablet:left-[2%] tablet:w-[50px]"
+              className="absolute left-[3px] top-[calc(50%)] z-20 grid w-[35px] animate-glow cursor-pointer place-items-center rounded-md border-[2px] border-green bg-offBlack p-3 drop-shadow-glow  hover:scale-105 tablet:left-[2%] tablet:w-[50px]"
             >
               <Image
                 alt="Go Left"
                 src={SliderLeft.src}
                 width={30}
                 height={30}
-                className="max-w-full"
+                className="drop-shadow-glow"
               />
             </button>
           )
@@ -55,13 +56,14 @@ const ProjectsSlider = () => {
               type="button"
               onClick={onClickHandler}
               title={label}
-              className=" absolute right-[3px] top-[calc(50%)] z-20 grid w-[35px] cursor-pointer place-items-center rounded-md border-[2px] border-green bg-offBlack p-3 drop-shadow-md hover:scale-105 tablet:right-[2%]  tablet:w-[50px]"
+              className=" absolute right-[3px] top-[calc(50%)] z-20 grid w-[35px] cursor-pointer place-items-center rounded-md border-[2px] border-green bg-offBlack p-3 drop-shadow-glow hover:scale-105 tablet:right-[2%]  tablet:w-[50px]"
             >
               <Image
                 alt="Go Left"
                 src={SliderRight.src}
                 width={30}
                 height={30}
+                className="drop-shadow-glow"
               />
             </button>
           )
@@ -170,7 +172,7 @@ const YoutubeSlide = ({
       </p>
     </div>
     <Image
-      blurDataURL="/Logo.png"
+      blurDataURL={url}
       placeholder="blur"
       src={url}
       width={500}
