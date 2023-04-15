@@ -60,17 +60,14 @@ const Home: NextPage = () => {
             className=" mr-[10%] max-w-[50%] rounded-full drop-shadow-2xl  tablet:max-w-[30%] "
           /> */}
           <div className="mt-4 flex max-w-[100%] flex-col items-center justify-center text-center  tablet:mx-2 tablet:mt-0  tablet:max-w-[50%] tablet:items-start tablet:text-left ">
-            <h1 className="   mb-[35px] mt-4 max-w-fit animate-glow  text-rH1 font-black text-offWhite drop-shadow-glow   mobile:mt-0 mobile:text-left">
+            <h1 className="   mb-[20px] mt-4 max-w-fit animate-glow  text-rH1 font-black text-offWhite drop-shadow-glow   mobile:mt-0 mobile:text-left">
               I&apos;m Ahmed Zaher
             </h1>
-            <h2 className="mb-[25px] text-rH2 font-semibold italic text-green ">
+            <h2 className="mb-[20px] text-rH2 font-semibold italic text-green ">
               A Full Stack Developer <br /> Based In the Pacific Northwest.
               <br />
-              <span className="text-rP font-thin text-offWhite opacity-30">
-                Currently Located in Boise ID
-              </span>
             </h2>
-            <p className=" mb-[25px] max-w-[80vw] text-rP font-medium text-offWhite tablet:max-w-[40vw] ">
+            <p className=" mb-[20px] max-w-[80vw] text-rP font-medium text-offWhite tablet:max-w-[40vw] ">
               With A deep passion for UX, and a drive for building applications
               that help drive the changes I believe we need in the world. <br />{" "}
               <br />
