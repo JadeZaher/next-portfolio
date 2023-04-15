@@ -19,7 +19,7 @@ export default function Model(props: any) {
     emissiveIntensity: 1,
     transparent: false,
     wireframe: true,
-    wireframeLinewidth: 20,
+    wireframeLinewidth: 2,
     lightMapIntensity: 20,
     opacity: 0.1,
   });

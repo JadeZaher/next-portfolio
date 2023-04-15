@@ -59,7 +59,7 @@ const Home: NextPage = () => {
             width={520}
             className=" mr-[10%] max-w-[50%] rounded-full drop-shadow-2xl  tablet:max-w-[30%] "
           /> */}
-          <div className="mt-4 flex max-w-[100%] flex-col items-center justify-center text-center  tablet:mx-2 tablet:mt-0  tablet:max-w-[50%] tablet:items-start tablet:text-left ">
+          <div className=" flex max-w-[100%] flex-col items-center justify-center text-center  tablet:mx-2 tablet:mt-0  tablet:max-w-[50%] tablet:items-start tablet:text-left ">
             <h1 className="   mb-[20px] mt-4 max-w-fit animate-glow  text-rH1 font-black text-offWhite drop-shadow-glow   mobile:mt-0 mobile:text-left">
               I&apos;m Ahmed Zaher
             </h1>
